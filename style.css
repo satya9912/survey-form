@@ -1,0 +1,98 @@
+/* common classes */
+label {
+  font-weight: bold;
+}
+
+.text-area {
+    width: 80%;
+    height: 50px;
+    padding: 8px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+.green {
+  color: #328837;
+}
+
+.green::placeholder {
+  color: #328837;
+}
+
+.input-field {
+  width: 80%;
+  padding: 5px;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #8ec992;
+}
+
+/* main container */
+
+.main-container {
+    background: white;
+    border: 1px solid gray;
+    margin: 25px 10%;
+    padding: 2rem;
+    box-shadow: 1px 1px 1px #888888;
+}
+
+.form-description {
+  font-size: 15px;
+  word-spacing: 1px;
+  line-height: 1.3rem;
+}
+
+.form-heading {
+    color: #328837;
+  }
+
+/* form-container */
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* left-section */
+
+.left-section {
+  width: 45%;
+}
+
+.city-container select{
+    width: 60%;
+    padding: 5px;
+    color: #328837;
+}
+
+.age-container {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+
+/* right-section */
+
+.right-section {
+  width: 45%;
+}
+
+.submit-btn {
+  width: 90%;
+  background: #328837;
+  color: white;
+  padding: 4px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="main-container">
+        <h1 class="form-heading">Survey Form</h1>
+        <p class="form-description">Feel free to answer the questions below based on your own experience and opinion. If you are not comfortable answering a particular question, please skip it by answering "No". Every answer would be very appreciated. Thank you for your time.</p>
+
+        <form class="form-container">
+            <div class="left-section">
+                <div class="name-container mb-20">
+                    <label for="name" class="mb-20"><strong>Your Name</strong></label> <br>
+                    <input class="mt-8 green input-field" type="text" name="name" id="name" placeholder="Enter your name" required>
+                </div>
+            
+                <div class="email-container mb-20">
+                    <label for="email">Your Email Address</label> <br>
+                    <input class="mt-8 green input-field" type="email" name="email" id="email" placeholder="user@user.com" required>
+                </div>
+            
+                <div class="mb-20">
+                    <label for="phone-number">Your Phone Number</label> <br>
+                    <input class="green mt-8 input-field" type="tel" name="phone-number" id="phone-number" placeholder="9999999999" required>
+                </div>
+            
+                <div class="city-container mb-20">
+                    <label for="city">Where do you live?</label> <br>
+                    <select name="city" class="mt-8">
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div>
+                    <fieldset class="age-container mb-20">
+                        <legend>Age</legend>
+                        <div>
+                            <input type="radio" name="age" value="15-20"> 15-20 <br>
+                            <input type="radio" name="age" value="20-30"> 20-30 <br>
+                            <input type="radio" name="age" value="30-40"> 30-40
+                        </div>
+
+                        <div>
+                            <input type="radio" name="age" value="40-50"> 40-50 <br>
+                            <input type="radio" name="age" value="prefer not to say"> Prefer not to say
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div>
+                    <label for="proficiency">How do you rate your proficiency in coding?</label> <br>
+                    <input type="radio" name="proficiency" value="beginner"> <strong>Beginner</strong> <br>
+                    <input type="radio" name="proficiency" value="Intermediate" checked> <strong>Intermediate</strong> <br>
+                    <input type="radio" name="proficiency" value="Advanced"> <strong>Advanced</strong>
+                </div>
+            </div>    
+
+            <div class="right-section">
+                <div class="mb-20">
+                    <label for="coding-contest">Have you ever applied to any coding contest?</label> <br>
+                    <input type="radio" name="coding-contest" class="mt-8" value="Yes"> Yes <br>
+                    <input type="radio" name="coding-contest" class="mt-8" value="No" checked> No
+                </div>
+
+                <div class="mb-20">
+                    <label for="passion">Discuss what drives your passion for coding and outline your aspirations in the field.</label> <br>
+                    <textarea class="text-area mt-8" id="passion" required></textarea>
+                </div>
+
+                <div class="mb-20">
+                    <label for="challenges">What are some of the challenges you face while coding?</label> <br>
+                    <textarea class="text-area mt-8" id="challenges" required></textarea>
+                </div>
+
+                <div class="mb-20">
+                    <label for="data-structures">Please list the data structures you have a strong understanding of.</label> <br>
+                    <textarea class="text-area mt-8" id="data-structures" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Form</button>
+            </div>
+        </form>   
+    </div>
+</body>
+</html>
